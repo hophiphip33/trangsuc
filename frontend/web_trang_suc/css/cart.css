@@ -1,0 +1,129 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 180px;
+    height: 180px;
+}
+
+body {
+    background-color: #F1F0F1;
+    display: flex;
+    justify-content: center;
+}
+
+.cart {
+    margin-top: 100px;
+    width: 60%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.back-btn {
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+    cursor: pointer;
+    color: #003467;
+    font-size: 20px;
+}
+
+.back-btn a {
+    text-decoration: none;
+}
+
+.back-btn a:hover {
+    text-decoration: underline;
+}
+
+.cart-title {
+    font-size: 24px;
+    font-weight:500;
+    text-align: center;
+}
+
+.ck-product-all {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    border: 10px solid black; 
+    border-radius: 20px; 
+    background-color: white; 
+}
+
+.ck-product {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="number"] {
+    width: 80px; /* Kích thước của input */
+    padding: 5px;
+    text-align: center; /* Căn giữa nội dung */
+    font-size: 16px; /* Cỡ chữ */
+    border: 2px solid #ccc; /* Viền input */
+    border-radius: 5px; /* Bo góc */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50; /* Đổi màu viền khi focus */
+}
+
+.product-cart-content {
+    display: flex;
+}
+
+.title-price  {
+    color: #C48B46;
+}
+
+.delete-product {
+    margin-left: 280px;
+}
+
+.delete-product a {
+    color: black;
+}
+
+.sale-price,
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    padding: 0;
+}
+
+.checkout-btn {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #003467;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.checkout-btn a {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    letter-spacing: 2px;
+}

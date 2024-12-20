@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="/font/fontawesome-free-6.7.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header-first.css">
+    <link rel="stylesheet" href="/css/slide-show.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/form-advise.css">
+    <link rel="stylesheet" href="/css/container-filter.css">
+    <link rel="stylesheet" href="/css/product-container.css">
+    <link rel="stylesheet" href="/css/pagination.css">
+    <link rel="stylesheet" href="/css/store-system.css">
+    <link rel="stylesheet" href="/css/jewelry-section.css">
+    <link rel="stylesheet" href="/css/news-section.css">
+    <link rel="stylesheet" href="/css/promo-container.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="left-section">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="icon-container">
+                        <img id="zalo-icon" src="/img/zalo.png" alt="Icon 2" />
+                    </div>
+                    <div class="contact-container">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact-text">1900 232 354</div>
+                    </div>
+                </div>
+                <div class="center-section">
+                    <img src="/img/logo.png" alt="Logo" />
+                </div>
+                <div class="right-section">
+                    <div class="small-icons">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-user"></i>
+                    <div class="about-tierra">Về Tierra</div>
+                    <div class="language-selector">
+                        <div class="language-option">VI</div>
+                        <div class="divider"></div>
+                        <div class="language-option">EN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="navbar">
+            <div class="navbar-inner">
+              <!-- Menu -->
+              <ul class="navbar-menu">
+                <li><a href="">Nhẫn cầu hôn</a></li>
+                <li><a href="">Nhẫn cưới</a></li>
+                <li><a href="">Trang sức</a></li>
+                <li><a href="">Kim Cương</a></li>
+                <li><a href="">Men's</a></li>
+                <li><a href="" class="highlight">Khuyến mãi</a></li>
+                <li><a href="">Tin Tức</a></li> 
+              </ul>
+          
+              <!-- Search -->
+              <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm nhanh" class="search-input" />
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+    </nav>
+      
+    <!-- Slide-show-image -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="/img/slide1.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="/img/slide2.png" alt="Slide 2">
+            </div>
+            <!-- <div class="slide">
+                <img src="/img/slide3.jpg" ault="Slide 3">
+            </div> -->
+        </div>
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+        <div class="dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
+
+    <script src="/js/slide_show_image.js"></script>
+
+   
+   <div class="promo-container">
+    <div class="card-promo">
+      <div class="card-inner-img">
+        <img src="/img/card-promo1.png">
+      </div>
+      <div class="card-inner-info">
+        <p>Nhẫn cầu hồn</p>
+        <p>Giảm đến 50%</p>
+        <p>Khám phá ngay</p>
+      </div>
+    </div>
+
+    <div class="card-promo">
+      <div class="card-inner-img">
+        <img src="/img/card-promo2.png">
+      </div>
+      <div class="card-inner-info">
+        <p>Nhẫn cầu hồn</p>
+        <p>Giảm đến 50%</p>
+        <p>Khám phá ngay</p>
+      </div>
+    </div>
+
+    <div class="card-promo">
+      <div class="card-inner-img">
+        <img src="/img/card-promo3.png">
+      </div>
+      <div class="card-inner-info">
+        <p>Nhẫn cầu hồn</p>
+        <p>Giảm đến 50%</p>
+        <p>Khám phá ngay</p>
+      </div>
+    </div>
+   </div>
+
+  
+    <div class="filter-sort-section">
+      <div class="controls-container">
+        <div class="filter-sort-group">
+          <div class="filter-control" tabindex="0" role="button">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/dbe5728eb77b1ee64267a9bac6b890266272af09c1cb5122cf4c1c589d2a55a2?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="control-icon"
+              alt="Filter options"
+            />
+            <div>Bộ lọc</div>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="sort-control" tabindex="0" role="button">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9c07978c0a88cd4ddf36f2c57895ff5715240dd7489187b756543f565e1730c?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="control-icon"
+              alt="Sort options"
+            />
+            <div>Sắp xếp</div>
+          </div>
+        </div>
+        <div class="view-controls">
+          <div class="collapse-view" tabindex="0" role="button">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/107031d62ddb24c6ab9317d4d3cbc044bc1fb52045b5934707c2fe9c18fe7a32?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="collapse-icon"
+              alt="Collapse view"
+            />
+            <div>Thu gọn</div>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="detail-view" tabindex="0" role="button">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/87477a1680fe79e206b7a522648a5bf3442b5b72d00f089d66409c3a635f8702?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="detail-icon"
+              alt="Detailed view"
+            />
+            <div>Chi tiết</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-container">
+      <div class="card-product">
+        <img src="/img/nhan1.png" width="274px" height="274px">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC2093</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">20.344.000 ₫</p>
+          <p class="sale-product">25.564.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan2.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC2093</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">20.344.000 ₫</p>
+          <p class="sale-product">25.564.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan3.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC5684</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">18.342.000 ₫</p>
+          <p class="sale-product">22.452.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan4.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC0679</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">10.123.000 ₫</p>
+          <p class="sale-product">17.788.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan5.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC5684</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">16.674.000 ₫</p>
+          <p class="sale-product">22.698.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan6.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC5684</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">16.674.000 ₫</p>
+          <p class="sale-product">22.698.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan7.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC5684</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">16.674.000 ₫</p>
+          <p class="sale-product">22.698.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan8.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC5684</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">16.674.000 ₫</p>
+          <p class="sale-product">22.698.000 ₫</p>
+        </div>
+      </div>
+
+      <div class="card-product">
+        <img src="/img/nhan9.png">
+        <div class="card-info">
+          <a href="">Nhẫn cưới NCC5684</a>
+        </div>
+        <div class="card-price">
+          <p class="price-product">16.674.000 ₫</p>
+          <p class="sale-product">22.698.000 ₫</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="page-link main">1</a>
+      <a href="#" class="page-link extra">2</a>
+      <a href="#" class="page-link extra">3</a>
+      <a href="#" class="page-link extra">4</a>
+    </div>
+    
+
+    <div class="store-system">
+      <div class="store-system-img">
+        <img src="/img/store-system.png" width="500px" height="500px">
+      </div>
+      <div class="store-system-info">
+        <p class="first">Hệ thống cửa hàng</p>
+        <p class="second">Thế giới trang sức cùng không gian mua sắm tuyệt vời đang chờ bạn ghé thăm.</p>
+        <a href="" >Tìm cửa hàng gần bạn</a> <i class="fa-solid fa-arrow-right"></i>
+        <button>Đặt lịch hẹn</button>
+      </div>
+    </div>
+
+
+
+    <div class="jewelry-section">
+      <div class="jewelry-wrapper">
+        <div class="section-title-wrapper">
+          <p  class="section-title">Lựa chọn trang sức lý tưởng</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/fce924a7cfaeaf31443e6b50ed63c8f8e11c76c1195fa7e140776ea244eaa2af?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="feature-image"
+            />
+            <div class="feature-title">Thanh lịch</div>
+          </div>
+          <div class="feature-item">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f6c3229e587020f5bc0d0bb0302f07c8f6d214febbf6722ecdf52efebae3d388?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="feature-image"
+            />
+            <div class="feature-title">Tinh tuyển tốt nhất</div>
+          </div>
+          <div class="feature-item">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a22a5db43153395fa21ab0f94af89463b16974b98a245843717cc7a8ea653ae5?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="feature-image"
+            />
+            <div class="feature-title">Tạo tác từ trái tim</div>
+          </div>
+          <div class="feature-item">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/84e7cbaea944d887040a86faa5a0be5dcd181de8b5429dbfb0fff89271bf2689?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad"
+              class="feature-image"
+            />
+            <div class="feature-title">Tư vấn tận tâm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="news-section">
+      <div class="news-wrapper">
+        <div class="news-content">
+          <div class="featured-article">
+            <a href="#" class="featured-image-link">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/31bfb3198809ff927cc40ddd61c300b1f11afc864716ce8525c83b6b0bac60d2?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" class="featured-image" alt="Tierra Diamond store opening celebration" />
+            </a>
+            <div class="logo-wrapper">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4094afa147e07332a1411d3b1c9abee821d4dcc5459e9749e108a7c003fbdc00?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" class="logo" alt="Tierra Diamond logo" />
+            </div>
+            <a href="#" class="article-title-link">
+              <h2 class="article-title">
+                Tierra Diamond chào đón cửa hàng thứ 8 tại GIẢI PHÓNG, HAI BÀ TRƯNG
+              </h2>
+            </a>
+            <p class="article-excerpt">
+              Ngày 20/11/2024, Tierra Diamond đánh dấu một bước tiến mới
+              <br />
+              trên hành trình phát triển với cửa hàng thứ 8 tại địa chỉ 55 Giải Phóng,
+              Hai Bà Trưng.
+            </p>
+          </div>
+          <div class="recent-news">
+            <h3 class="section-title">Tin mới nhất</h3>
+            <div class="news-item">
+              <div class="news-grid">
+                <div class="image-column">
+                  <div class="image-wrapper">
+                    <a href="#" class="thumbnail-link">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/33b997d2fcb9e390ac213506f6f41f5658da6540e6535582cb03390ccf34d3c6?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" class="thumbnail" alt="Lab-grown diamonds comparison article" />
+                    </a>
+                  </div>
+                </div>
+                <div class="content-column">
+                  <div class="content-wrapper">
+                    <a href="#" class="news-title-link">
+                      <h4 class="news-title">
+                        Kim cương Lab-grown là gì? Sự
+                        <br />
+                        khác nhau giữa Kim cương tự
+                        <br />
+                        nhiên và kim cương Lab-grown:
+                        <br />
+                        Đâu là sự lựa chọn tốt nhất?
+                      </h4>
+                    </a>
+                    <time class="news-date">17/11/2024</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-grid">
+                <div class="image-column">
+                  <div class="image-wrapper">
+                    <a href="#" class="thumbnail-link">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfd60cc1539e3afa7a1a53d7cfc3ec2f73aad410bfff4f3a56ab41f485290469?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" class="thumbnail" alt="Ring size guide" />
+                    </a>
+                  </div>
+                </div>
+                <div class="content-column">
+                  <div class="content-wrapper">
+                    <a href="#" class="news-title-link">
+                      <h4 class="news-title">
+                        Hướng dẫn 4 cách đo size nhẫn
+                        <br />
+                        chuẩn, không sai 1 li
+                      </h4>
+                    </a>
+                    <time class="news-date">16/11/2024</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-grid">
+                <div class="image-column">
+                  <div class="image-wrapper">
+                    <a href="#" class="thumbnail-link">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef142013c1c6dd8bcae26cc136b8b0e8c081fd20d8a4eaad12f257fb1483fa1f?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" class="thumbnail" alt="Spark Of Heaven collection" />
+                    </a>
+                  </div>
+                </div>
+                <div class="content-column">
+                  <div class="content-wrapper">
+                    <a href="#" class="news-title-link">
+                      <h4 class="news-title">
+                        Spark Of Heaven - Bộ sưu tập nhẫn
+                        <br />
+                        cầu hôn mới từ Tierra Diamond
+                      </h4>
+                    </a>
+                    <time class="news-date">01/10/2024</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="form-advise-container">
+    <form class="get-advise-container" method="">
+      <div class="form-advise">
+         <div class="form-label">
+             <p class="label-info-one">Nhận tư vấn từ Tierra</p>
+             <p class="label-info-two">Đăng ký ngay bên dưới.</p>
+         </div>
+
+         <div class="form-input">
+             <div class="input-name">
+                 <input type="text" class="name" placeholder="Tên của bạn">
+             </div>
+             <div class="input-phone-city">
+                 <input type="tel" class="phone-number" placeholder="Số điện thoại">
+                 <input type="text" class="choose-city" placeholder="Chọn tỉnh thành">
+             </div>
+             <div class="btn">
+                 <button>Tư vấn ngay</button>
+             </div>
+         </div>
+      </div>
+     </form>
+   </div>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-border">
+          <div class="footer-content">
+            <div class="brand-section">
+              <div class="brand-container">
+                <a href="#" class="logo-link">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a004103e83bbbc169435e50e781f7a63ce62e786b8dbfb45a9839c088407375d?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" alt="Tierra Logo" class="logo-primary" />
+                </a>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a7c6dffbf7a846fbd68919d47bc28db9b707d8edbe03aeb97b7d27945b5e8238?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" alt="Tierra Secondary Logo" class="logo-secondary" />
+              </div>
+            </div>
+            
+            <div class=products-section">
+              <div class="products-container">
+                <h2 class="section-title">SẢN PHẨM</h2>
+                <nav class="product-list">
+                  <a href="#" class="product-item">Nhẫn cưới</a>
+                  <a href="#" class="product-item">Nhẫn cầu hôn</a>
+                  <a href="#" class="product-item">Nhẫn kim cương</a>
+                  <a href="#" class="product-item">Nhẫn nam</a>
+                  <a href="#" class="product-item">Bông Tai</a>
+                </nav>
+              </div>
+            </div>
+      
+            <div class="contact-section">
+              <div class="contact-container">
+                <h2 class="section-title">LIÊN HỆ</h2>
+                <h3 class="contact-subtitle">GỌI MUA HÀNG</h3>
+                <div class="contact-list">
+                  <a href="tel:1900232354" class="contact-item">1900 232 354</a>
+                  <a href="tel:02871062016" class="contact-item">028 7106 2016</a>
+                  <a href="tel:0938256545" class="contact-item">0938 256 545</a>
+                </div>
+                <h3 class="contact-subtitle">GÓP Ý KHIẾU NẠI</h3>
+                <div class="contact-list">
+                  <a href="tel:1900232354" class="contact-item">1900 232 354 (Phím 0)</a>
+                  <a href="mailto:support@tierra.vn" class="contact-item">support@tierra.vn</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="support-section">
+              <div class="support-container">
+                <h2 class="section-title">HỖ TRỢ</h2>
+                <nav class="support-list">
+                  <a href="#" class="support-item">Chính sách mua hàng - thu đổi</a>
+                  <a href="#" class="support-item">Phương thức thanh toán</a>
+                  <a href="#" class="support-item">Bảo mật thông tin</a>
+                </nav>
+              </div>
+            </div>
+      
+            <div class="about-section">
+              <div class="about-container">
+                <h2 class="section-title">VỀ CHÚNG TÔI</h2>
+                <nav class="about-list">
+                  <a href="#" class="about-item">Câu chuyện Tierra</a>
+                  <a href="#" class="about-item">Hệ thống cửa hàng</a>
+                  <a href="#" class="about-item">Tuyển dụng</a>
+                </nav>
+                
+                <h2 class="social-section">KẾT NỐI VỚI TIERRA</h2>
+                <div class="social-list">
+                  <div class="social-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/51c176ef42105e5746eb024216c051a7819b7051f103fc4e4079bf20fc7d5842?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" alt="Natural Diamond Social Icon" class="social-icon" />
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <div class="footer-info">
+            <div class="footer-company">
+              <div class="company-details">
+                <p class="company-text">
+                  Công ty Cổ phần Tierra - Do Sở kế hoạch và đầu tư
+                  TPHCM cấp ngày 20/10/2016
+                </p>
+                <p class="company-address">
+                  Trụ sở chính: 55 Giải Phóng, Đồng Tâm, Hai Bà Trưng, Hà Nội 
+                  </p>
+              </div>
+              <div class="footer-certifications">
+                <a href="#" class="cert-link">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/57cfba3d830bd1562181f4d1e53a7257ad4f54be7dfba00ea37e7d9df0659cf8?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" alt="DMCA Protection Badge" class="cert-image" />
+                </a>
+                <a href="#" class="cert-link">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/77eba373aea2d1b33d495b875ce6fcf1724e0bea08a46b2568dadfa82beee7d1?placeholderIfAbsent=true&apiKey=6fdf780a98c2496f903b4192dd1909ad" alt="Security Certification" class="cert-image" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>

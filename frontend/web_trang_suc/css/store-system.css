@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.store-system {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    gap: 40px;  /* Khoảng cách giữa ảnh và thông tin */
+    align-items: center;  /* Căn giữa theo chiều dọc */
+  }
+  
+  .store-system-img {
+    flex-shrink: 0;  /* Đảm bảo hình ảnh không bị thu nhỏ */
+  }
+  
+  .store-system-info {
+    max-width: 400px;  /* Đặt chiều rộng tối đa cho phần thông tin (tùy chỉnh theo ý muốn) */
+  }
+  
+  .store-system-info p {
+    margin: 10px 0;  /* Khoảng cách giữa các đoạn văn */
+  }
+  
+  .first {
+    font-size: 22px;
+  }
+
+  .second {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(120, 111, 111);
+  }
+
+  .store-system-info a {
+    color: #007bff;  /* Thay đổi màu sắc của link */
+    text-decoration: none;  /* Bỏ gạch chân mặc định */
+    display: inline-block;
+    margin-right: 10px;  /* Khoảng cách giữa link và icon */
+    font-size: 14px;
+  }
+  
+  .store-system-info button {
+    margin-left: 10px;
+    margin-top: 10px;  /* Khoảng cách giữa button và các phần tử phía trên */
+    padding: 10px 20px;  /* Thêm padding cho button */
+    background-color: white;  /* Màu nền cho button */
+    color: black;  /* Màu chữ của button */
+    border-radius: solid 1px rgb(94, 93, 93);  /* Bo góc button */
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .store-system-info button:hover {
+    background-color: #0056b3;  /* Màu nền khi hover */
+  }
+  

@@ -1,0 +1,38 @@
+.promo-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Khoảng cách giữa các thẻ */
+  }
+  
+  .card-promo {
+    width: 30%; /* Chỉnh chiều rộng của mỗi thẻ promo */
+    
+  }
+  
+  .card-inner-img {
+    width: 100%; /* Thẻ chứa ảnh sẽ có chiều rộng bằng 100% thẻ .card-promo */
+    height: auto; /* Chiều cao tự động căn chỉnh theo tỷ lệ */
+    overflow: hidden; /* Ẩn phần ảnh vượt quá nếu có */
+    display: flex;
+    justify-content: center; /* Căn giữa ảnh theo chiều ngang */
+  }
+  
+  .card-inner-img img {
+    width: 80%; /* Đặt ảnh nhỏ lại (80% của thẻ div chứa ảnh) */
+    height: auto; /* Giữ tỷ lệ ảnh */
+  }
+  
+  .card-inner-info {
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  
+  .card-inner-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+
+  

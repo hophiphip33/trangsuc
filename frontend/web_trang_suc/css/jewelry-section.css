@@ -1,0 +1,83 @@
+.jewelry-section {
+    background-color: rgba(248, 243, 239, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(63, 58, 54, 1);
+    text-align: center;
+    padding: 60px;
+    margin-top: 50px;
+  }
+
+  .jewelry-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1196px;
+    flex-direction: column;
+  }
+
+  .section-title-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1;
+    padding: 0 15px 20px;
+  }
+
+  .section-title {
+    text-transform: none;
+  }
+
+  .features-grid {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    font-size: 15px;
+    font-weight: 400;
+    flex-wrap: wrap;
+  }
+
+  .feature-item {
+    display: flex;
+    min-height: 1px;
+    min-width: 240px;
+    flex-direction: column;
+    line-height: 23px;
+    flex: 1;
+    flex-basis: 0%;
+    padding: 0 15px;
+  }
+
+  .feature-image {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    max-width: 302px;
+  }
+
+  .feature-title {
+    width: 100%;
+    padding: 10px 65px 0;
+  }
+
+  @media (max-width: 991px) {
+    .jewelry-section {
+      padding: 0 20px;
+    }
+
+    .jewelry-wrapper {
+      max-width: 100%;
+    }
+
+    .section-title {
+      padding: 0 20px;
+    }
+
+    .feature-title {
+      padding: 0 20px;
+    }
+  }

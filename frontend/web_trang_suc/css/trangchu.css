@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%; /* Chiếm 80% chiều rộng của trang web */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+}
+
+.header-top {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    height: auto; /* Tự động chiều cao */
+    margin: 0 auto; /* Căn giữa nếu cần */
+}
+
+.header-top img {
+    width: 100%; /* Hình ảnh bao phủ toàn bộ chiều rộng của header-top */
+}
+
+hr {
+    width: 90%; /* Chiếm 90% chiều rộng của trang */
+    border: 0.5px solid rgb(221, 218, 218); /* Đường kẻ */
+    margin: 0 auto;
+}
+
+.header-bottom {
+    width: 100%;
+    height: 60px; /* Đặt chiều cao cố định */
+    margin: 0 auto;
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Chia khoảng cách đều giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.contact-info {
+    flex: 1; /* Giữ khoảng cách linh hoạt */
+    text-align: left; /* Căn nội dung về lề trái */
+    display: flex; /* Đặt Flexbox để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100%; /* Chiều cao bằng chiều cao của thẻ cha */
+}
+
+.logo {
+    flex: 0; /* Không giãn rộng */
+    text-align: center; /* Căn giữa nội dung */
+    display: flex; /* Đặt Flexbox để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Logo nằm giữa */
+    height: 100%; /* Chiều cao bằng thẻ cha */
+}
+
+.logo img {
+    height: 40px;
+}
+
+.account {
+    flex: 1; /* Giữ khoảng cách linh hoạt */
+    text-align: right; /* Căn nội dung về lề phải */
+    display: flex; /* Đặt Flexbox để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-end; /* Đẩy nội dung vào sát lề phải */
+    height: 100%; /* Chiều cao bằng thẻ cha */
+}
+
+.contact-info ul,
+.account ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    display: flex; /* Dàn hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin: 0; /* Xóa margin mặc định */
+    padding: 0; /* Xóa padding mặc định */
+}
+
+.contact-info ul li a,
+.account ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 7px 15px;
+    font-size: 15px;
+    font-weight: 220;
+}
+
+.contact-info ul li a:hover,
+.account ul li a:hover{
+    font-weight: 400;
+    color: #e0c28c;
+}
+
+.account ul li i
+.contact-info ul li i {
+    margin-right: 5px;
+}
+
+nav {
+    width: 100%;
+    background-color: #2e86de;
+}   
+
+nav ul {
+    width: 80%;
+    margin: 0 auto;
+    text-align:justify;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 28px;
+    text-align: center;
+}
+
+nav ul li input {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;   
+}
+
+nav ul li i {
+    margin-left: 3px;
+    color: #e0c28c;
+}
+
+nav ul li a:hover { 
+    color: #e0c28c;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%; /* Chiếm toàn bộ chiều rộng của body */
+    overflow: hidden; /* Ẩn phần thừa của ảnh */
+  }
+  
+  .slider {
+    display: flex; /* Hiển thị các ảnh theo hàng ngang */
+    transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển đổi */
+  }
+  
+  .slide {
+    width: 100%; /* Mỗi slide chiếm toàn bộ chiều rộng */
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của slide */
+    display: block;
+  }
+  
+  /* Vị trí dấu chấm */
+  .dots {
+    position: absolute;
+    bottom: 20px; /* Đặt ở dưới cùng bên trong slider */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #131b24; 
+  }
+
+
+

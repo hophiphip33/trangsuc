@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các trang */
+    justify-content: center; /* Căn giữa các số trang */
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .page-link {
+    text-decoration: none; /* Xóa gạch dưới mặc định của liên kết */
+    color: #333; /* Màu của các trang không phải trang hiện tại */
+    font-weight: 400;
+    padding: 5px 10px;
+  }
+  
+  .main {
+    color: #C09F88;
+    border-bottom: solid 1px #C09F88;
+  }
+
+  .page-link:hover {
+    background-color: rgb(193, 187, 187);
+  }

@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.filter-sort-section {
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    padding: 14px 362px;
+    margin-top: 50px;
+  }
+  @media (max-width: 991px) {
+    .filter-sort-section {
+      padding: 0 20px;
+    }
+  }
+  .controls-container {
+    display: flex;
+    width: 100%;
+    max-width: 1196px;
+    align-items: center;
+    gap: 40px 100px;
+    flex-wrap: wrap;
+    padding: 0 38px 0 10px;
+  }
+  @media (max-width: 991px) {
+    .controls-container {
+      max-width: 100%;
+      padding-right: 20px;
+    }
+  }
+  .filter-sort-group {
+    align-self: stretch;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    color: rgba(63, 58, 54, 1);
+    line-height: 20px;
+    flex: 1;
+    margin: auto 0;
+  }
+  .filter-control {
+    align-self: stretch;
+    display: flex;
+    gap: 10px;
+    margin: auto 0;
+  }
+  .control-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+    margin: auto 0;
+  }
+  .vertical-separator {
+    background-color: rgba(217, 217, 217, 1);
+    align-self: stretch;
+    display: flex;
+    width: 1px;
+    height: 24px;
+    margin: auto 0;
+  }
+  .sort-control {
+    align-self: stretch;
+    display: flex;
+    gap: 10px;
+  }
+  .view-controls {
+    align-self: stretch;
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    margin: auto 0;
+  }
+  .collapse-view {
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+    color: rgba(180, 140, 114, 1);
+    line-height: 23px;
+  }
+  .collapse-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 16px;
+    margin: auto 0;
+  }
+  .detail-view {
+    align-self: start;
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 24px;
+  }
+  .detail-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 16px;
+    margin: auto 0;
+  }

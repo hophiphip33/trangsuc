@@ -1,0 +1,16 @@
+.list-type-product {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Khoảng cách giữa các thẻ */
+  }
+  
+  .card {
+    width: 23%; /* Đảm bảo các thẻ có kích thước đều */
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 10%; /* Thay đổi tỷ lệ hình ảnh theo ý muốn, ví dụ 80% */
+    height: auto; /* Giữ tỷ lệ khung hình */
+  }
+  
